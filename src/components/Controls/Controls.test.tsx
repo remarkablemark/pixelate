@@ -141,11 +141,9 @@ describe('Controls', () => {
     expect(onChange).toHaveBeenCalledWith({ format: 'webp' });
   });
 
-  it('labels the auto option with the source format', () => {
+  it('selects the matching option', () => {
     const { rerender } = renderControls();
-    expect(
-      screen.getByRole('option', { name: 'Original' }),
-    ).toBeInTheDocument();
+    expect(screen.getByLabelText('Format')).toHaveValue('png');
 
     rerender(
       <Controls
@@ -158,9 +156,13 @@ describe('Controls', () => {
       />,
     );
 
-    expect(
-      screen.getByRole('option', { name: 'Original (JPEG)' }),
-    ).toBeInTheDocument();
+    expect(screen.getByLabelText('Format')).toHaveValue('jpeg');
+  });
+
+  it('keeps an explicit format when the source is different', () => {
+    renderControls({ format: 'webp' }, { sourceFormat: 'jpeg' });
+
+    expect(screen.getByLabelText('Format')).toHaveValue('webp');
   });
 
   it('disables download until an image is ready', async () => {

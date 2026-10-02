@@ -1,6 +1,7 @@
 import type { ChangeEvent } from 'react';
 import { useId } from 'react';
-import type { FormatSetting, OutputFormat, Settings } from 'src/types/settings';
+import { resolveFormat } from 'src/services/image';
+import type { OutputFormat, Settings } from 'src/types/settings';
 
 import { PRESETS } from './presets';
 
@@ -36,6 +37,7 @@ export function Controls({
   const nearestId = useId();
   const maxColorsId = useId();
   const formatId = useId();
+  const effectiveFormat = resolveFormat(settings.format, sourceFormat ?? 'png');
 
   return (
     <div className="space-y-6 rounded-lg border border-slate-200 bg-white p-4 shadow-xs dark:border-slate-700 dark:bg-slate-800/60">
@@ -224,15 +226,10 @@ export function Controls({
             className="w-full cursor-pointer rounded-md border border-slate-300 bg-white px-2 py-1.5 text-sm dark:border-slate-600 dark:bg-slate-800"
             id={formatId}
             onChange={(event: ChangeEvent<HTMLSelectElement>) => {
-              onChange({ format: event.target.value as FormatSetting });
+              onChange({ format: event.target.value as OutputFormat });
             }}
-            value={settings.format}
+            value={effectiveFormat}
           >
-            <option value="auto">
-              {sourceFormat
-                ? `Original (${sourceFormat.toUpperCase()})`
-                : 'Original'}
-            </option>
             <option value="png">PNG</option>
             <option value="webp">WebP</option>
             <option value="jpeg">JPEG</option>
