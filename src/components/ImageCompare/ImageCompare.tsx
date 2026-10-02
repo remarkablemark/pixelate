@@ -25,7 +25,7 @@ function Pane({ imageData, label }: PaneProps) {
       </figcaption>
       <canvas
         aria-label={label}
-        className={`block w-full rounded-md border border-slate-200 bg-slate-100 dark:border-slate-700 dark:bg-slate-800 ${
+        className={`block max-w-full rounded-md border border-slate-200 bg-slate-100 dark:border-slate-700 dark:bg-slate-800 ${
           imageData ? '' : 'hidden'
         }`}
         ref={attach}
