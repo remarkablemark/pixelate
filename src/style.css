@@ -1,5 +1,16 @@
 @import 'tailwindcss';
 
+@utility checkerboard {
+  background-color: #ffffff;
+  background-image: conic-gradient(
+    #cccccc 25%,
+    #ffffff 0 50%,
+    #cccccc 0 75%,
+    #ffffff 0
+  );
+  background-size: 16px 16px;
+}
+
 .github-corner > svg {
   @apply opacity-50 transition-opacity duration-400;
 }

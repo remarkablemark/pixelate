@@ -61,6 +61,13 @@ describe('ImageCompare', () => {
     expect(context2dMock.putImageData).not.toHaveBeenCalled();
   });
 
+  it('shows a checkerboard behind the preview for transparency', () => {
+    render(<ImageCompare original={createImageData(2, 2)} result={null} />);
+
+    const canvas = screen.getByLabelText('Before');
+    expect(canvas).toHaveClass('checkerboard');
+  });
+
   it('stops drawing after unmount', () => {
     const { unmount } = render(
       <ImageCompare original={createImageData(2, 2)} result={null} />,
