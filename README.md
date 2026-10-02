@@ -1,4 +1,4 @@
-# pixelate
+# Pixelate
 
 [![build](https://github.com/remarkablemark/pixelate/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/pixelate/actions/workflows/build.yml)
 [![test](https://github.com/remarkablemark/pixelate/actions/workflows/test.yml/badge.svg)](https://github.com/remarkablemark/pixelate/actions/workflows/test.yml)
