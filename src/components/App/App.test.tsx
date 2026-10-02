@@ -11,7 +11,7 @@ async function uploadImage(
 ): Promise<void> {
   await user.upload(screen.getByLabelText('Choose an image'), file);
   await waitFor(() => {
-    expect(screen.getByLabelText('Pixelated')).toHaveAttribute('width', '8');
+    expect(screen.getByLabelText('After')).toHaveAttribute('width', '8');
   });
 }
 
@@ -41,7 +41,7 @@ describe('App', () => {
 
     await uploadImage(user, new File(['x'], 'cat.png', { type: 'image/png' }));
 
-    expect(screen.getByLabelText('Original')).toHaveAttribute('width', '8');
+    expect(screen.getByLabelText('Before')).toHaveAttribute('width', '8');
     expect(screen.getByRole('button', { name: 'Download' })).toBeEnabled();
     expect(
       screen.queryByText('Upload an image to see the before and after.'),

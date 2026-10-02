@@ -30,11 +30,11 @@ describe('ImageCompare', () => {
     expect(
       screen.queryByText('Upload an image to see the before and after.'),
     ).not.toBeInTheDocument();
-    expect(screen.getByLabelText('Original')).toBeInTheDocument();
-    expect(screen.getByLabelText('Pixelated')).toBeInTheDocument();
-    expect(screen.getByLabelText('Original')).toHaveAttribute('width', '4');
-    expect(screen.getByLabelText('Original')).toHaveAttribute('height', '2');
-    expect(screen.getByLabelText('Pixelated')).toHaveAttribute('width', '2');
+    expect(screen.getByLabelText('Before')).toBeInTheDocument();
+    expect(screen.getByLabelText('After')).toBeInTheDocument();
+    expect(screen.getByLabelText('Before')).toHaveAttribute('width', '4');
+    expect(screen.getByLabelText('Before')).toHaveAttribute('height', '2');
+    expect(screen.getByLabelText('After')).toHaveAttribute('width', '2');
     expect(context2dMock.putImageData).toHaveBeenCalledTimes(2);
     expect(context2dMock.putImageData).toHaveBeenCalledWith(original, 0, 0);
     expect(context2dMock.putImageData).toHaveBeenCalledWith(result, 0, 0);

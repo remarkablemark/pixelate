@@ -46,9 +46,9 @@ export function ImageCompare({ original, result }: ImageCompareProps) {
           Upload an image to see the before and after.
         </p>
       )}
-      <div className="grid gap-4 sm:grid-cols-2">
-        <Pane imageData={original} label="Original" />
-        <Pane imageData={result} label="Pixelated" />
+      <div className="grid gap-4">
+        <Pane imageData={original} label="Before" />
+        <Pane imageData={result} label="After" />
       </div>
     </div>
   );
