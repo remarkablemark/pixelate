@@ -1,18 +1,20 @@
-# vite-react-tailwind-template
+# pixelate
 
-[![build](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/build.yml)
-[![test](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/test.yml/badge.svg)](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/test.yml)
+[![build](https://github.com/remarkablemark/pixelate/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/pixelate/actions/workflows/build.yml)
+[![test](https://github.com/remarkablemark/pixelate/actions/workflows/test.yml/badge.svg)](https://github.com/remarkablemark/pixelate/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/remarkablemark/pixelate/graph/badge.svg?token=wBGnRrczpn)](https://codecov.io/gh/remarkablemark/pixelate)
 
-🎨 Pixelate images in your browser
+🎨 Pixelate images in your browser:
+
+- [Pixelate](https://remarkablemark.org/pixelate/)
 
 ## Install
 
 Clone the repository:
 
 ```sh
-git clone https://github.com/remarkablemark/vite-react-tailwind-template.git
-cd vite-react-tailwind-template
+git clone https://github.com/remarkablemark/pixelate.git
+cd pixelate
 ```
 
 Install the dependencies:

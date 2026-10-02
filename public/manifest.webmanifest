@@ -1,7 +1,7 @@
 {
-  "name": "Vite React Tailwind Template",
-  "short_name": "Vite React Tailwind Template",
-  "description": "Vite React Tailwind Template",
+  "name": "Pixelate",
+  "short_name": "Pixelate",
+  "description": "🎨 Pixelate images in your browser",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
