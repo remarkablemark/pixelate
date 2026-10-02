@@ -2,9 +2,9 @@
 
 [![build](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/build.yml)
 [![test](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/test.yml/badge.svg)](https://github.com/remarkablemark/vite-react-tailwind-template/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/remarkablemark/vite-react-tailwind-template/graph/badge.svg?token=DEr2eVeqdz)](https://codecov.io/gh/remarkablemark/vite-react-tailwind-template)
+[![codecov](https://codecov.io/gh/remarkablemark/pixelate/graph/badge.svg?token=wBGnRrczpn)](https://codecov.io/gh/remarkablemark/pixelate)
 
-⚡ Vite React Tailwind Template
+🎨 Pixelate images in your browser
 
 ## Install
 
