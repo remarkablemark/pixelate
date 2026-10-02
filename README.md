@@ -8,6 +8,17 @@
 
 - [Pixelate](https://remarkablemark.org/pixelate/)
 
+## Features
+
+- Load images via file picker or drag & drop — nothing is uploaded
+- Adjustable block size with average or nearest-neighbor sampling
+- Brightness, contrast, and saturation adjustments
+- Optional color palette reduction (median cut, 2–256 colors)
+- One-click presets (8-bit, Censor, Retro 16, Mosaic, Vivid, Grayscale)
+- Before/after preview
+- Download as PNG, WebP, or JPEG (defaults to the source format)
+- Settings persist in local storage
+
 ## Install
 
 Clone the repository:
