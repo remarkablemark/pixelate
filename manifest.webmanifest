@@ -1,0 +1,17 @@
+{
+  "name": "Pixelate",
+  "short_name": "Pixelate",
+  "description": "🎨 Pixelate images in your browser",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
